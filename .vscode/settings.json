@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    "tsconfig.json": true,
+    "README.md": true,
+    "package.json": true,
+    "package-lock.json": true,
+    ".gitignore": true,
+    ".eslintrc.json": true,
+    "public": true
+
+  }
+}
+
