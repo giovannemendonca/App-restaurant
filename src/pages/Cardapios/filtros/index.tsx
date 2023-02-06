@@ -1,6 +1,6 @@
-import filtros from "./filtros.json";
-import styles from "./Filtros.module.scss";
-import classNames from "classnames";
+import filtros from './filtros.json';
+import styles from './Filtros.module.scss';
+import classNames from 'classnames';
 
 interface Props {
   filtro: number | null;
@@ -8,6 +8,7 @@ interface Props {
 }
 
 export default function Filtros({ filtro, setFiltro }: Props) {
+  
   function selecionarFiltro(label: string, id: number) {
     if (filtro === id) return setFiltro(null);
     return setFiltro(id);
@@ -19,7 +20,7 @@ export default function Filtros({ filtro, setFiltro }: Props) {
         <button
           className={classNames({
             [styles.filtros__filtro]: true,
-            [styles["filtros__filtro--ativo"]]: filtro === id,
+            [styles['filtros__filtro--ativo']]: filtro === id,
           })}
           key={id}
           onClick={() => selecionarFiltro(label, id)}
